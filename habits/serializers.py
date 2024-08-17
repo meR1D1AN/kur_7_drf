@@ -19,5 +19,8 @@ class HabitSerializer(ModelSerializer):
             RelatedHabitValidator(field="related_habit"),
             DurationTimeValidator(field="duration"),
             PleasantHabitValidator(field="is_pleasant"),
-            RegularityValidator(field1="frequency_number", field2="frequency_unit"),
+            RegularityValidator(
+                field1="frequency_number",
+                field2="frequency_unit"
+            ),
         ]

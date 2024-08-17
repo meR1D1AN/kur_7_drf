@@ -17,7 +17,10 @@ from users.models import User
 
 class HabitTestCase(APITestCase):
     def setUp(self):
-        self.user = User.objects.create(email="test@gmail.com", tg_chat_id="12345")
+        self.user = User.objects.create(
+            email="test@gmail.com",
+            tg_chat_id="12345"
+        )
         self.habit = Habit.objects.create(
             place="парк",
             time=timezone.now(),
@@ -113,7 +116,10 @@ class CreateUserCommandTest(TestCase):
 
 class ServiceTestCase(TestCase):
     def setUp(self):
-        self.user = User.objects.create(email="test@gmail.com", tg_chat_id="12345678")
+        self.user = User.objects.create(
+            email="test@gmail.com",
+            tg_chat_id="12345678"
+        )
 
         self.habit = Habit.objects.create(
             place="парк",
@@ -136,5 +142,9 @@ class ServiceTestCase(TestCase):
         send_telegram(self.habit)
         mock_get.assert_called_once_with(
             "https://api.telegram.org/bottest_token/sendMessage",
-            params={"text": "приседания запланировано на сегодня на 08:00", "chat_id": "12345678"}
+            params={
+                "text":
+                    "приседания запланировано на сегодня на 08:00",
+                "chat_id":
+                    "12345678"}
         )

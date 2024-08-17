@@ -10,7 +10,10 @@ from habits.permissions import IsOwner
 from habits.serializers import HabitSerializer
 
 
-@method_decorator(name="list", decorator=swagger_auto_schema(operation_description="Список привычек"))
+@method_decorator(
+    name="list",
+    decorator=swagger_auto_schema(operation_description="Список привычек")
+)
 class HabitViewSet(viewsets.ModelViewSet):
     serializer_class = HabitSerializer
     permission_classes = [IsAuthenticated, IsOwner]
