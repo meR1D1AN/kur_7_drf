@@ -114,17 +114,17 @@
 
 1. Запустите тесты (внесены исключения для тестирования, такие как миграции, и файлы в папке config)
 
-```bash
-coverage run --source='.' --omit='*/migrations/*,config/agsi.py,config/wsgi.py' manage.py test
-coverage report
-```
+   ```bash
+   coverage run --source='.' --omit='*/migrations/*,config/agsi.py,config/wsgi.py' manage.py test
+   coverage report
+   ```
 2. Запустите проверку flake 8. (добавлен файл .flake8 в нём внесены исключения для проверки)
-```bash
-flake8 .
-```
+   ```bash
+   flake8 .
+   ```
 
 ## Документация API
 
 Документация API доступна после запуска сервера по адресам: 
-- http://localhost:8000/redoc/
-- http://localhost:8000/docs/
+   - http://localhost:8000/redoc/
+   - http://localhost:8000/docs/
