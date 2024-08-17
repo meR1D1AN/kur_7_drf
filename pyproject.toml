@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "kur-7-drf"
+version = "0.1.0"
+description = ""
+authors = ["Nikita <nikita@mer1d1an.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.7"
+python-dotenv = "^1.0.1"
+django-cors-headers = "^4.4.0"
+celery = "^5.4.0"
+django-celery-beat = "^2.6.0"
+drf-yasg = "^1.21.7"
+eventlet = "^0.36.1"
+psycopg2-binary = "^2.9.9"
+setuptools = "^72.2.0"
+djangorestframework = "^3.15.2"
+coverage = "^7.6.1"
+djangorestframework-simplejwt = "^5.3.1"
+pillow = "^10.4.0"
+requests = "^2.32.3"
+django-filter = "^24.3"
+freezegun = "^1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
