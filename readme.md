@@ -84,7 +84,7 @@
    ```bash
    celery -A config worker -l INFO -P eventlet
    ```
-   - для запуска Celery Beat необходимо открыть дополнительный терминал, и ввести следующую команду на Windows:
+   - для запуска Celery Beat необходимо открыть дополнительный терминал, и ввести следующую команду на Windows и для Linux:
    ```bash
    celery -A config beat -l info -S django
    ```
