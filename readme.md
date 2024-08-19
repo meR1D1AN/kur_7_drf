@@ -49,7 +49,6 @@
 4. Создание и примените миграции:
 
     ```bash
-    python manage.py makemigrations
     python manage.py migrate
     ```
    
