@@ -60,7 +60,7 @@
     ```
 - Команда для создания администратора
   ```bash
-   python manage.py cu
+   python manage.py csu
   ```
 - Добавление данных в базу данных  
    ```bash
