@@ -122,8 +122,14 @@
    flake8 .
    ```
 
+## Для запуска проекта через Docker необходимо:
+
+   ```bash
+   docker-compose up -d --build
+   ```
+
 ## Документация API
 
 Документация API доступна после запуска сервера по адресам: 
-   - http://127.0.0.1:8000/redoc/
-   - http://127.0.0.1:8000/docs/
+   - http://localhost:8000/redoc/
+   - http://localhost:8000/docs/
